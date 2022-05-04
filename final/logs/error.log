@@ -1,0 +1,740 @@
+{'username': [ErrorDetail(string='user with this username already exists.', code='unique')]}
+Internal Server Error: /admin/api/visitor/4/delete/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.api_visitor__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2104, in delete_view
+    return self._delete_view(request, object_id, extra_context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2141, in _delete_view
+    self.delete_model(request, obj)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1226, in delete_model
+    obj.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/base.py", line 1094, in delete
+    return collector.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/deletion.py", line 462, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 843, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.api_visitor__old
+"POST /admin/api/visitor/4/delete/ HTTP/1.1" 500 158186
+Internal Server Error: /visitors/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: destroy() got multiple values for argument 'pk'
+"DELETE /visitors/1/ HTTP/1.1" 500 82624
+Internal Server Error: /visitors/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: destroy() got an unexpected keyword argument 'pk'
+"DELETE /visitors/1/ HTTP/1.1" 500 82636
+Internal Server Error: /visitors/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: destroy() got multiple values for argument 'pk'
+"DELETE /visitors/1/ HTTP/1.1" 500 82624
+Internal Server Error: /visitors/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.api_visitor__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 41, in destroy
+    user.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/base.py", line 1094, in delete
+    return collector.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/deletion.py", line 462, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 843, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.api_visitor__old
+"DELETE /visitors/1/ HTTP/1.1" 500 143612
+Internal Server Error: /visitors/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.api_visitor__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 41, in destroy
+    user.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/base.py", line 1094, in delete
+    return collector.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/deletion.py", line 462, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 843, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.api_visitor__old
+"DELETE /visitors/1/ HTTP/1.1" 500 143612
+Internal Server Error: /visitors/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 30, in create
+    data.password = make_password(data.password)
+AttributeError: 'dict' object has no attribute 'password'
+"POST /visitors/ HTTP/1.1" 500 86430
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: api_visitor.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/authentication.py", line 127, in authenticate
+    if not user or not user.is_active:
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/functional.py", line 258, in inner
+    self._setup()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/functional.py", line 398, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/__init__.py", line 198, in get_user
+    user = backend.get_user(user_id)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/backends.py", line 158, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: api_visitor.image
+"GET / HTTP/1.1" 500 196773
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: api_visitor.image
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 261, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 230, in inner
+    if not self.has_permission(request):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 203, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/functional.py", line 258, in inner
+    self._setup()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/utils/functional.py", line 398, in _setup
+    self._wrapped = self._setupfunc()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/middleware.py", line 25, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/middleware.py", line 11, in get_user
+    request._cached_user = auth.get_user(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/__init__.py", line 198, in get_user
+    user = backend.get_user(user_id)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/contrib/auth/backends.py", line 158, in get_user
+    user = UserModel._default_manager.get(pk=user_id)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 492, in get
+    num = len(clone)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: api_visitor.image
+"GET /admin/ HTTP/1.1" 500 172517
+Internal Server Error: /manage/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 40, in list
+    return Response(serializer.data, safe=False)
+TypeError: __init__() got an unexpected keyword argument 'safe'
+"GET /manage/ HTTP/1.1" 500 87153
+Internal Server Error: /manage/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.api_visitor__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 44, in destroy
+    user.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/base.py", line 1094, in delete
+    return collector.delete()
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/deletion.py", line 462, in delete
+    count = qs._raw_delete(using=self.using)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 843, in _raw_delete
+    cursor = query.get_compiler(using).execute_sql(CURSOR)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/backends/sqlite3/base.py", line 477, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.api_visitor__old
+"DELETE /manage/1/ HTTP/1.1" 500 144385
+Internal Server Error: /manage/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 40, in list
+    return Response(serializer.data, safe=False)
+TypeError: __init__() got an unexpected keyword argument 'safe'
+"GET /manage/ HTTP/1.1" 500 87153
+Internal Server Error: /charms/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Graffiti' object has no attribute 'event'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/serializers.py", line 687, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `event` on serializer `CharmSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Graffiti` instance.
+Original exception text was: 'Graffiti' object has no attribute 'event'.
+"GET /charms/ HTTP/1.1" 500 122575
+{'price': [ErrorDetail(string='This field is required.', code='required')], 'image': [ErrorDetail(string='This field is required.', code='required')], 'isAnimated': [ErrorDetail(string='This field is required.', code='required')]}
+Internal Server Error: /charmsdetail/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/final/api/views/vs.py", line 89, in partial_update
+    charm = Charm.objects.get(id=pk)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/db/models/query.py", line 496, in get
+    raise self.model.DoesNotExist(
+api.models.Charm.DoesNotExist: Charm matching query does not exist.
+"PATCH /charmsdetail/1/ HTTP/1.1" 500 95402
+{'price': [ErrorDetail(string='This field is required.', code='required')], 'image': [ErrorDetail(string='This field is required.', code='required')], 'event': [ErrorDetail(string='This field is required.', code='required')]}
+Internal Server Error: /skins/1/edit
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'skin_id'
+"GET /skins/1/edit HTTP/1.1" 500 82358
+Internal Server Error: /skins/1/edit/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'skin_id'
+"GET /skins/1/edit/ HTTP/1.1" 500 82373
+Internal Server Error: /skins/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'skin_id'
+"GET /skins/1/ HTTP/1.1" 500 82298
+Internal Server Error: /skins/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: get() got multiple values for argument 'skin_id'
+"GET /skins/1/ HTTP/1.1" 500 82306
+{'price': [ErrorDetail(string='This field is required.', code='required')], 'image': [ErrorDetail(string='This field is required.', code='required')], 'rarity': [ErrorDetail(string='This field is required.', code='required')], 'enchantment': [ErrorDetail(string='This field is required.', code='required')], 'gun': [ErrorDetail(string='This field is required.', code='required')]}
+Internal Server Error: /blogs/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: delete() got multiple values for argument 'blog_id'
+"DELETE /blogs/1/ HTTP/1.1" 500 82355
+{'price': [ErrorDetail(string='This field is required.', code='required')], 'image': [ErrorDetail(string='This field is required.', code='required')], 'rarity': [ErrorDetail(string='This field is required.', code='required')], 'enchantment': [ErrorDetail(string='This field is required.', code='required')], 'gun': [ErrorDetail(string='This field is required.', code='required')]}
+Internal Server Error: /blogs/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: delete() got multiple values for argument 'blog_id'
+"DELETE /blogs/1/ HTTP/1.1" 500 82355
+Internal Server Error: /blogs/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: delete() got multiple values for argument 'blog_id'
+"DELETE /blogs/1/ HTTP/1.1" 500 82355
+Internal Server Error: /blogs/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: delete() got multiple values for argument 'blog_id'
+"DELETE /blogs/1/ HTTP/1.1" 500 82355
+Internal Server Error: /skins/1/
+Traceback (most recent call last):
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/django/views/generic/base.py", line 84, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/tairsairanbekov/PycharmProjects/my_env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+TypeError: delete() got multiple values for argument 'skin_id'
+"DELETE /skins/1/ HTTP/1.1" 500 82355
